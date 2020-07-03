@@ -14,7 +14,7 @@
     "dev": "run-p dev:client dev:server",
     "dev:client": "webpack --watch",
     "dev:server": "nodemon server",
-    "start": "run-s build server",
+    "start": "node server",
     "build": "webpack ",
     "server": "node server",
     "test": "jest --watchAll"
@@ -38,7 +38,7 @@
     "express": "^4.17.1",
     "marked": "^1.1.0",
     "npm-run-all": "^4.1.5",
-    "superagent": "^5.2.2"
+    "superagent": "^5.2.2",
   },
   "devDependencies": {
     "@babel/core": "^7.10.2",
@@ -53,11 +53,11 @@
     "enzyme-adapter-react-16": "^1.15.2",
     "jest": "^25.3.0",
     "nodemon": "^2.0.4",
+    "webpack": "^4.43.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0",
-    "webpack": "^4.43.0",
-    "webpack-cli": "^3.3.11",
+    "webpack-cli": "^3.3.11"
     "webpack-dev-server": "^3.11.0"
   },
   "bugs": {
