@@ -14,14 +14,14 @@ class Load extends React.Component {
       this.setState({
         loadComplete: true
       })
-    }, 7500);
+    }, 2000);
   }
 
   render() {
     return (
-      <div>
+      <div id="load">
         <h1>Preppin' your tacos fam!</h1>
-        <iframe src='https://gfycat.com/ifr/DeadDimwittedEstuarinecrocodile' ></iframe>
+        <img src="images/tacoDance.gif" alt="A dancing taco" />
         {this.state.loadComplete && <Redirect to="/recipe" />}
       </div>
     )
